@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Portfolio</title>
+ 
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<style>
+  .hero{
+    background-color: rgb(153, 202, 235);
+  }
+  .hero img{
+    max-width: 100%;
+    border-radius: 50%;
+  }
+  .card:hover{
+    transform: translateY(-8px);
+    transition: 0.8s;
+  }
+  #projects{
+    background-color: #eef4ff;
+  }
+  footer{
+    background-color: rgb(14, 14, 15);
+    color: white;
+    padding: 30px ;
+  }
+</style>
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-dark bg-dark navbar-expand-lg sticky-top shadow-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand fw-bold" href="#">Your Name</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link active"href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link "href="#education">Education</a></li>
+        <li class="nav-item"><a class="nav-link"href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link "href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link "href="#contact">Contact</a></li>
+
+      </ul>
+      
+    </div>
+  
+  </div>
+</nav>
+<!-- Hero Section -->
+ <section id="home" class="hero text-center">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6 text-start">
+        <h1 class="fw-bold">Gundapu Pavani</h1>
+        <p class="lead">Aspiring Web Developer and B.Tech student passionate about creating responsive and user-friendly websites using HTML, CSS, Bootstrap,JavaScript, and Python. 
+          I enjoy building innovative projects and continuously learning new technologies to enhance my development skills.</p>
+        <a href="#projects" class="btn btn-dark">Projects</a>
+      </div>
+      <div class="col-md-6 ">
+        <img src="C:\practic html\portfolio\images\human2.png" class="img-fluid" style="width: 300px; height: 300px; object-fit: cover;" alt="Profile">
+      </div>
+    </div>
+ </section>
+ <!-- about section -->
+
+ <section id="about" class="py-5 bg-dark text-white">
+  <div class="container text-center">
+    <h2 class="fw-bold mb-4">About Me</h2>
+    <p>Hello! I'm Gundapu Pavani, a B.Tech student and aspiring Full Stack 
+      Web Developer. I specialize in front-end development using HTML, CSS, Bootstrap, and JavaScript. 
+      I am passionate about designing attractive, responsive websites and solving real-world problems through technology. 
+      I am eager to learn new frameworks and contribute to innovative projects.</p>
+  </div>
+ </section>
+
+ <!-- Educational Info -->
+ <section id="education">
+  <div class="container text-center py-5">
+    <h2 class="fw-bold mb-4"> Educational Info</h2>
+
+   <div class="table-responsive"> <table class="table table-striped table-hover">
+      <thead class="table-dark">
+        <tr>
+          <th>Degree</th>
+          <th>Institution</th>
+          <th>Year</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>B.Tech in AI&DS</td>
+          <td>Sree Venkateswara College of Engineering</td>
+          <td>2023-2027</td>
+          <td>8.9</td>
+        </tr>
+        <tr>
+          <td>Intermediate (MPC)</td>
+          <td>Krishna Chaithanya Junior College</td>
+          <td>2021-2023</td>
+          <td>80%</td>
+        </tr>
+         <tr>
+          <td>SSC</td>
+          <td>Muncipal Corporation High School</td>
+          <td>2021</td>
+          <td>10.0</td>
+        </tr>
+      </tbody>
+    </table></div>
+
+   
+
+  </div>
+ </section>
+
+  <!-- Project Section -->
+    
+       <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="fw-bold text-center mb-4">Projects</h2>
+        <div class="row g-5">
+           <div class="col-md-4">
+                <div class="card">
+                    <img src="C:\practic html\portfolio\images\flipcart-clone.png" alt="" class="img-fluid" style="max-width: 600px;height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Flipcart clone website</h5>
+                      <p class="card-text">Built an online shopping website with product listings and responsive UI.</p>
+                    <a href="https://pavani0010.github.io/flipkart-clone/" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+             <div class="col-md-4">
+                <div class="card">
+                    <img src="C:\practic html\portfolio\images\myntra-plus.png" alt="" class="img-fluid" style="max-width: 600px;height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Myntra Plus Website</h5>
+                      <p class="card-text">Built an online shopping website with product listings and responsive UI.</p>
+                    <a href="https://pavani0010.github.io/Myntra-Plus-website/" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+             <div class="col-md-4">
+                <div class="card">
+                    <img src="C:\practic html\portfolio\images\human2.png" alt="" class="img-fluid" style="max-width: 600px;height: 200px; object-fit: cover;">
+                    <div class="card-body">
+                        <h5 class="card-title">Student Management system</h5>
+                      <p class="card-text">Developed a Python-based application to manage student records efficiently.</p>
+                    <a href="" class="btn btn-primary">View Project</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+       </section>
+
+
+       <!-- contact section -->
+        <section id="contact"class="py-5 bg-light">
+          <div class="container text-center">
+            <h2 class="fw-bold mb-4">Contact Info</h2>
+            <p>Email:pavanigundapu26@gmail.com | <a href="https://github.com/pavani0010">github</a></p>
+          </div>
+      
+        </section>
+
+        <footer class="text-center">
+          <p>&copy; 2026 Gundapu Pavani. All rights reserved.</p>
+        </footer>
+</body>
+</html>
