@@ -25,13 +25,68 @@
     color: white;
     padding: 30px ;
   }
+ /* Skills Section */
+
+#skills {
+    background-color: #1f2329;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#skills h2 {
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.skill-card {
+    background-color: #111315;
+    padding: 25px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+}
+
+.skill-card h3 {
+    margin-bottom: 10px;
+}
+
+.skill-card p {
+    color: #cccccc;
+}
+
+
+/* Mobile */
+
+@media (max-width: 768px) {
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 450px) {
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+}
 </style>
 </head>
 <body>
     <!-- navbar -->
     <nav class="navbar navbar-dark bg-dark navbar-expand-lg sticky-top shadow-lg">
   <div class="container-fluid">
-    <a class="navbar-brand fw-bold" href="#">Your Name</a>
+    <a class="navbar-brand fw-bold" href="#">Gundapu Pavani</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -42,6 +97,7 @@
         <li class="nav-item"><a class="nav-link"href="#about">About</a></li>
         <li class="nav-item"><a class="nav-link "href="#projects">Projects</a></li>
         <li class="nav-item"><a class="nav-link "href="#contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link "href="#Skills">My Skills</a></li>
 
       </ul>
       
@@ -117,7 +173,42 @@
   </div>
  </section>
 
-  <!-- Project Section -->
+ <!-- My skills -->
+
+     <section id="skills"
+      class="skills-section">
+      <div class="container">
+       <h2>Skills</h2>
+       <div class="skill-card">
+        <h3>HTML5</h3>
+        <p>Web Designing</p>
+       </div>
+
+       <div class="skill-card">
+        <h3>JavaScript</h3>
+        <p>Responsive Design</p>
+       </div>
+
+       <div class="skill-card">
+        <h3>Python</h3>
+        <p>Programming</p>
+       </div>
+
+       <div class="skill-card">
+        <h3>SQL</h3>
+        <p>Database</p>
+       </div>
+
+       <div class="skill-card">
+        <h3>Git & GitHub</h3>
+        <p>Version Control</p>
+       </div>
+      </div>
+     </div>
+     </section>
+
+ 
+ <!-- Project Section -->
     
        <section id="projects" class="py-5">
         <div class="container">
@@ -158,15 +249,45 @@
         </div>
        </section>
 
-
        <!-- contact section -->
-        <section id="contact"class="py-5 bg-light">
-          <div class="container text-center">
-            <h2 class="fw-bold mb-4">Contact Info</h2>
-            <p>Email:pavanigundapu26@gmail.com | <a href="https://github.com/pavani0010">github</a></p>
-          </div>
-      
-        </section>
+<section id="contact" class="py-5 bg-light">
+
+    <div class="container text-center">
+
+        <h2 class="fw-bold mb-4">Contact Info</h2>
+
+        <p>
+            📧 <strong>Email:</strong>
+            <a href="mailto:pavanigundapu26@gmail.com">
+                pavanigundapu26@gmail.com
+            </a>
+        </p>
+
+        <p>
+            📱 <strong>Phone:</strong>
+            <a href="tel:9652580574">
+                9652580574
+            </a>
+        </p>
+
+        <p>
+            💼 <strong>LinkedIn:</strong>
+            <a href="https://www.linkedin.com/in/gundapu-pavani-25897341a?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank">
+                LinkedIn Profile
+            </a>
+        </p>
+
+        <p>
+            🐙 <strong>GitHub:</strong>
+            <a href="https://github.com/pavani0010" target="_blank">
+                github.com/pavani0010
+            </a>
+        </p>
+
+    </div>
+
+</section>
+       
 
         <footer class="text-center">
           <p>&copy; 2026 Gundapu Pavani. All rights reserved.</p>
